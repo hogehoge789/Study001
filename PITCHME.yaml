@@ -1,6 +1,11 @@
 # テーマ設定
 theme : beige
 
+background-size : cover
+
+# 中央揃えの設定
+vertical-center : false
+
 #トランジションの設定
 transition : fade
 
