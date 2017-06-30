@@ -5,6 +5,7 @@ background-size : cover
 
 # 中央揃えの設定
 vertical-center : false
+horizon-center : false
 
 #トランジションの設定
 transition : fade
