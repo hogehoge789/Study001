@@ -4,7 +4,7 @@ theme : sky
 background-size : cover
 
 #トランジションの設定
-transition : fade
+transition : concave
 
 #スライドのページ数表示の設定
 slide-number: true
