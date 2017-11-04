@@ -21,7 +21,16 @@ by GitPitch
 コンテナは隔離された空間で任意のプロセスを実行する事
 コンテナは仮想環境というよりはプロセスに近い
 
-Portainerの紹介
++++
+
+#### SwarmManagerで実行
+docker swarm init --listen-addr [manager_IPaddr:2377]
+docker node ls
+
+#### SwarmWorkerで実行
+docker swarm join --token [SwarmToken] [manager_IPaddr:2377]
+
+#### Portainerの紹介
 docker run -d -p 9000:9000 -v "/var/run/docker.sock:/var/run/docker.sock" portainer/portainer
 
 ---
