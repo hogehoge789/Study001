@@ -1,38 +1,45 @@
-### コンテナ(Docker)についてhogehoge
+### コンテナ(Docker)について
 
 勉強会用資料  
 by GitPitch
 
 ---
-### 目次
+## 目次
 #### 仮想環境とコンテナの違い
 #### コンテナとは
-#### Docker Swarmの紹介
 #### Dockerの使い方、ログ、監視
+#### Kubernetesの紹介
+---
 
-+++
+仮想環境はホスト型、ハイパーバイザ型が有名  
+ホスト型の構成図  
+ハイパーバイザ型の構成図  
+コンテナの構成図  
 
-仮想環境はホスト型、ハイパーバイザ型が有名
+--
 
-ホスト型の構成図
-ハイパーバイザ型の構成図
-コンテナの構成図
+コンテナは仮想化というよりは  
+隔離された環境で任意のプロセスを実行させる  
+という方が正確。
 
-コンテナは隔離された空間で任意のプロセスを実行する事
-コンテナは仮想環境というよりはプロセスに近い
+--
 
-+++
+プロセスなので起動が早い
+隔離されているので感覚的には違うマシンのようにも見える
 
-#### SwarmManagerで実行
-docker swarm init --listen-addr [manager_IPaddr:2377]
-docker node ls
+---
+#### 仮想環境とコンテナの違い
 
-#### SwarmWorkerで実行
-docker swarm join --token [SwarmToken] [manager_IPaddr:2377]
 
-#### Portainerの紹介
-docker run -d -p 9000:9000 -v "/var/run/docker.sock:/var/run/docker.sock" portainer/portainer
+
 
 ---
 #### コンテナとは
 
+
+
+---
+#### Dockerの使い方、ログ、監視
+
+---
+#### Kubernetesの紹介
